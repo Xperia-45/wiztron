@@ -221,7 +221,7 @@ description
 <h2>👨‍💻 Developed By</h2>
 
 <p>
-<b>Sagar</b><br>
+<b>AYUSH</b><br>
 First Year AIML Engineering Student
 </p>
 
