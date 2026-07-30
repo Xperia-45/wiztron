@@ -1,4 +1,5 @@
 import type { SVGProps } from "react";
+import officialLogo from "../assets/wiztron.jpg";
 
 type IconProps = SVGProps<SVGSVGElement>;
 
@@ -291,33 +292,16 @@ export function IconX(props: IconProps) {
 }
 
 /** Wiztron logo mark */
-export function LogoMark({ className = "h-9 w-9" }: { className?: string }) {
+export function LogoMark({
+  className = "h-9 w-9",
+}: {
+  className?: string;
+}) {
   return (
-    <div
-      className={`relative flex items-center justify-center rounded-xl bg-gradient-to-br from-violet-500 via-indigo-500 to-blue-500 shadow-lg shadow-violet-500/30 ${className}`}
-    >
-      <svg
-        viewBox="0 0 32 32"
-        className="h-[60%] w-[60%] text-white"
-        fill="none"
-      >
-        <path
-          d="M8 8 L16 24 L24 8"
-          stroke="currentColor"
-          strokeWidth="2.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M11 14h10"
-          stroke="currentColor"
-          strokeWidth="2.2"
-          strokeLinecap="round"
-          opacity="0.85"
-        />
-        <circle cx="16" cy="6" r="1.6" fill="currentColor" />
-      </svg>
-      <div className="absolute inset-0 rounded-xl ring-1 ring-white/20" />
-    </div>
+    <img
+      src={officialLogo}
+      alt="Wiztron Logo"
+      className={`${className} object-contain`}
+    />
   );
 }
