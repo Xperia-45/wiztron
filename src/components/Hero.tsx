@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { HERO } from "../data/content";
-import { IconArrowRight } from "./icons";
 import { LogoMark } from "./icons";
 import { ParticleBackground } from "./ParticleBackground";
 
@@ -94,14 +93,7 @@ export function Hero() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row reveal visible">
-            <a
-              href="#join"
-              className="btn-shine group inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-violet-600 via-indigo-600 to-blue-600 px-8 py-3.5 text-base font-semibold text-white shadow-xl shadow-violet-600/30 transition hover:shadow-violet-500/50 sm:w-auto"
-            >
-              Join Us
-              <IconArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </a>
+          <div className="flex items-center justify-center reveal visible">
             <a
               href="#about"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-3.5 text-base font-semibold text-white backdrop-blur-md transition hover:border-violet-400/40 hover:bg-white/10 sm:w-auto"
